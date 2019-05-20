@@ -159,42 +159,42 @@ function screenshotSlider () {
 }
 
 //Contact Form Validation
-function contactFormValidation () {
-  var activeForm = $('.form-validation');
-  if(activeForm.length){
-    activeForm.validate({ // initialize the plugin
-      rules: {
-        sub: {
-          required: true
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        message: {
-          required: true
-        }
-      },
-      submitHandler: function(form) {
-                $(form).ajaxSubmit({
-                    success: function() {
-                        $('.form-validation :input').attr('disabled', 'disabled');
-                        activeForm.fadeTo( "slow", 1, function() {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor','default');
-                            $('#alert-success').fadeIn();
-                        });
-                    },
-                    error: function() {
-                        activeForm.fadeTo( "slow", 1, function() {
-                            $('#alert-error').fadeIn();
-                        });
-                    }
-                });
-            }
-        });
-  }
-}
+// function contactFormValidation () {
+//   var activeForm = $('.form-validation');
+//   if(activeForm.length){
+//     activeForm.validate({ // initialize the plugin
+//       rules: {
+//         sub: {
+//           required: true
+//         },
+//         email: {
+//           required: true,
+//           email: true
+//         },
+//         message: {
+//           required: true
+//         }
+//       },
+//       submitHandler: function(form) {
+//                 $(form).ajaxSubmit({
+//                     success: function() {
+//                         $('.form-validation :input').attr('disabled', 'disabled');
+//                         activeForm.fadeTo( "slow", 1, function() {
+//                             $(this).find(':input').attr('disabled', 'disabled');
+//                             $(this).find('label').css('cursor','default');
+//                             $('#alert-success').fadeIn();
+//                         });
+//                     },
+//                     error: function() {
+//                         activeForm.fadeTo( "slow", 1, function() {
+//                             $('#alert-error').fadeIn();
+//                         });
+//                     }
+//                 });
+//             }
+//         });
+//   }
+// }
 
 
 // Close suddess Alret
@@ -634,7 +634,7 @@ jQuery(document).on('ready', function() {
      BannerSlider ();
      testimonialSlider ();
      screenshotSlider ();
-     contactFormValidation ();
+    //  contactFormValidation ();
      closeSuccessAlert ();
   })(jQuery);
 });

@@ -222,7 +222,8 @@
 .home-page-one .blog-details .tag-option ul li a:hover,
 .home-page-one .blog-details .comment-area .comment-section .comment button:hover {color: #0aebb3;}
 .home-page-one footer .subscribe-form .input-wrapper input[type="text"]:focus,
-.home-page-one footer .subscribe-form .input-wrapper input[type="email"]:focus {
+.home-page-one footer .subscribe-form .input-wrapper input[type="email"]:focus,
+.home-page-one footer .subscribe-form .input-wrapper input[type="password"]:focus {
   border-color:#1ac2ed;
 }
 /*---------Home two---------*/
@@ -245,7 +246,8 @@
 .home-page-two .blog-details .tag-option ul li a:hover,
 .home-page-two .blog-details .comment-area .comment-section .comment button:hover {color: #ff4e39;}
 .home-page-two footer .subscribe-form .input-wrapper input[type="text"]:focus,
-.home-page-two footer .subscribe-form .input-wrapper input[type="email"]:focus {
+.home-page-two footer .subscribe-form .input-wrapper input[type="email"]:focus,
+.home-page-one footer .subscribe-form .input-wrapper input[type="password"]:focus {
   border-color:#ff5541;
 }
 /*---------Home three---------*/
@@ -268,7 +270,8 @@
 .home-page-three .blog-details .tag-option ul li a:hover,
 .home-page-three .blog-details .comment-area .comment-section .comment button:hover {color: #6a74ff;}
 .home-page-three footer .subscribe-form .input-wrapper input[type="text"]:focus,
-.home-page-three footer .subscribe-form .input-wrapper input[type="email"]:focus {
+.home-page-three footer .subscribe-form .input-wrapper input[type="email"]:focus,
+.home-page-one footer .subscribe-form .input-wrapper input[type="password"]:focus {
   border-color:#6681ff;
 }
 
@@ -593,8 +596,8 @@
   position: absolute;
   bottom:20px;
   left:50%;
-  -webkit-transform:translateX(-50%;);
-          transform:translateX(-50%;);
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
 }
 .boost-your-phone .theme-title-two {margin-bottom: 55px;}
 .boost-your-phone .text {padding: 150px 0 0 0;}
@@ -1078,7 +1081,8 @@ footer .subscribe-form .input-wrapper {
   margin: 70px 0 85px 0;
 }
 footer .subscribe-form .input-wrapper input[type="text"],
-footer .subscribe-form .input-wrapper input[type="email"] {
+footer .subscribe-form .input-wrapper input[type="email"],
+footer .subscribe-form .input-wrapper input[type="password"]  {
   width: 100%;
   border: 1px solid #eaf0f3;
   border-radius: 30px;
